@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "makaan.github.io/grama/static/css/main.d2acfb13.chunk.css",
+    "main.js": "makaan.github.io/grama/static/js/main.89b0c0f1.chunk.js",
+    "main.js.map": "makaan.github.io/grama/static/js/main.89b0c0f1.chunk.js.map",
+    "runtime~main.js": "makaan.github.io/grama/static/js/runtime~main.c2be1e35.js",
+    "runtime~main.js.map": "makaan.github.io/grama/static/js/runtime~main.c2be1e35.js.map",
+    "static/css/2.696264e1.chunk.css": "makaan.github.io/grama/static/css/2.696264e1.chunk.css",
+    "static/js/2.144dcb25.chunk.js": "makaan.github.io/grama/static/js/2.144dcb25.chunk.js",
+    "static/js/2.144dcb25.chunk.js.map": "makaan.github.io/grama/static/js/2.144dcb25.chunk.js.map",
+    "index.html": "makaan.github.io/grama/index.html",
+    "precache-manifest.86db9ca1eb6096e4022ddd8732304633.js": "makaan.github.io/grama/precache-manifest.86db9ca1eb6096e4022ddd8732304633.js",
+    "service-worker.js": "makaan.github.io/grama/service-worker.js",
+    "static/css/2.696264e1.chunk.css.map": "makaan.github.io/grama/static/css/2.696264e1.chunk.css.map",
+    "static/css/main.d2acfb13.chunk.css.map": "makaan.github.io/grama/static/css/main.d2acfb13.chunk.css.map",
+    "static/media/font-awesome.min.css": "makaan.github.io/grama/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.svg": "makaan.github.io/grama/static/media/logo.5d5d9eef.svg"
+  }
+}
