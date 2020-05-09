@@ -1,7 +1,9 @@
-function async init() {
+const init = async () => {
   let response = await fetch('/datos.json')
   let json = await response.json()
-  document.getElementById('datos').innerHTML = json
+
+  //Una vez que ya tenes el json manipulalo como quieras
+  document.getElementById('datos').innerHTML = JSON.stringify(json, null, 2) 
 }
 
 init()
