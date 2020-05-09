@@ -1,87 +1,13 @@
 <!DOCTYPE html>
 <html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+  </head>
+  <body>
+      <h3>Datos de github pages</h3>
+      <p id='datos'></p>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-
-
-
-
-</head>
-
-<body>
-    <div id="app">
-        <div class="container fill">
-            <nav class="navbar navbar-light fixed-top barra">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Logo Radio" class="logo_radio" src="res/logo/logo_radio.png">
-                    </a>
-                    <div class="navbar-nav">
-                        <h5 class="font-weight-bold navbar-text text-white">Radio Universidad</h5>
-                    </div>
-                </div>
-            </nav>
-            <div class="row align-bottom encabezado">
-                <div class="texto_encabezado text">
-                    <div class="col-md-6 col-sm-12">
-                        <p>Complejo Palihue. San Andrés 800 (Altos de Palihue)</p>
-                        <p>Tel. 0291 4595190</p>
-                        <p>Universidad Nacional del Sur</p>
-                        <p>Bahía Blanca. Argentina</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <a href="mailto:radio@uns.edu.ar"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.twitter.com/AM1240RadioUNS"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.facebook.com/AM1240RadioUNS"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row escuchar_online">
-                <div class="col-xs-12">
-                    <h4 class="text-center">Escucha online aqui <i class="fas fa-play glifo_pausa" id="boton_play" onclick="play()"></i></h4>
-
-                </div>
-            </div>
-
-            <div v-if="!mostrarPrograma" class="row programas">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <h1 class="text-center">Programas</h1>
-                </div>
-
-                <div v-for="programa in programas" class="col-md-3 col-xs-6 contenedor_programa" v-on:click="mostrarPograma(programa)">
-                    <img v-bind:src="programa.picture" class="imagen_programa">
-                    <p class="texto_centrado_imagen text-center">{{ programa.name }}</p>
-                </div>
-
-            </div>
-
-            <div v-if="mostrarPrograma" class="row vistaPrograma">
-                <div class="card col-md-6 offset-md-3 col-xs-12" style="width: 18rem;">
-                    <img class="card-img-top" v-bind:src="vistaPrograma.picture" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ vistaPrograma.name }}</h5>
-                        <p class="card-text">{{ vistaPrograma.biog }}</p>
-                        <a v-on:click="mostrarGrilla()" class="btn btn-primary">Volver</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <audio id="audio" src="http://46.4.33.73:7104/; "></audio>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js "></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
-
-    <script src="app.js "></script>
-</body>
-
+      <script src="app.js" type="application/javascript"></script>
+  </body>
 </html>
