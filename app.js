@@ -11,7 +11,7 @@ const init = async () => {
   for(pais of json) {
     const opciones = []
     let i = 0
-    while (i < 2) {
+    while (i < 3) {
       const random = randomNumberInRange(0, json.length - 1)
       if(json[random].Capital !== pais.Capital) {
         opciones.push(json[random].Capital)
