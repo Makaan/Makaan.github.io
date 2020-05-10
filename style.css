@@ -1,77 +1,24 @@
-.barra {
-    background: rgba(0, 0, 0, 0.8);
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: start
 }
 
-i {
-    color: white;
+.item-pais {
+  flex: 0 0 auto;
+  margin: 10px;
+  border: 2px solid blue;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.fill {
-    height: 100%;
-}
-
-.encabezado {
-    background-image: url("res/img/back.jpg");
-    height: 400px;
-    position: relative;
-}
-
-.texto_encabezado {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 0;
-    color: white;
-    padding-right: 5%;
-    padding-top: 3%;
-}
-
-.escuchar_online {
-    padding: 4%;
-    color: white;
-    background: rgb(80, 80, 80);
-}
-
-.glifo_pausa {
-    color: white;
-}
-
-.glifo_play {
-    color: blue;
-}
-
-.logo_radio {
-    height: 40px;
-    margin-top: -25%;
-}
-
-.programas {
-    padding-top: 3%;
-    background: grey;
-}
-
-.contenedor_programa {
-    position: relative;
-    margin-bottom: 3%;
-}
-
-.texto_centrado_imagen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.5rem;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 3px solid white;
-}
-
-.imagen_programa {
-    height: 100%;
-    width: 100%;
-}
-
-.vistaPrograma {
-    background: grey;
+.img-pais {
+  max-width: 100px;
 }
