@@ -19,3 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 }
 , false);
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'es'}, 'container');
+}

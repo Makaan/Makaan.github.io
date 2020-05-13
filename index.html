@@ -3,11 +3,33 @@
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="UTF-8">
-      <link href="style.css"  rel="stylesheet" type="text/css">
+      <link id='estilo' href="estilo1.css"  rel="stylesheet" type="text/css">
   </head>
   <body>
-     <div id='container' class="container"></div>
+    <div>
+      <button id='estilo1'>Estilo 1</button>
+      <button id='estilo2'>Estilo 2</button>
+    </div>
 
-      <script src="banderas.js" type="application/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      const localStorage = window.localStorage
+      if (localStorage.getItem('estilo') !== 'estilo1') {
+        $("head link#estilo").attr("href", 'estilo2.css');
+      }
+      $(document).ready(() => {
+        
+        $("#estilo1").click(function() {
+          localStorage.setItem('estilo', 'estilo1')
+          $("head link#estilo").attr("href", 'estilo1.css');
+        })
+        $("#estilo2").click(function() {
+          localStorage.setItem('estilo', 'estilo2')
+          $("head link#estilo").attr("href", 'estilo2.css');
+        })
+
+      })
+      
+    </script>
   </body>
 </html>
